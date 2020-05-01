@@ -18,11 +18,28 @@
  * Register Menus
  * Custom Logo
  * WP Body Open
- * Register Sidebars
+ * egister Sidebars
  * Enqueue Block Editor Assets
  * Enqueue Classic Editor Styles
- * Block Editor Settings
  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
