@@ -18,12 +18,14 @@
  * Register Menus
  * Custom Logo
  * WP Body Open
- * egister Sidebars
+ * Register Sidebars
  * Enqueue Block Editor Assets
  * Enqueue Classic Editor Styles
+ * Block Editor Settings
  */
 
 
+ // Custom Meta Boxes
 
 
 
