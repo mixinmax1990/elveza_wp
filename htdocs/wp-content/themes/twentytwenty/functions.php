@@ -52,7 +52,7 @@
 }
 add_filter( 'rwmb_meta_boxes', 'your_prefix_get_meta_box' );
 
-register_meta('post', 'city', [
+register_meta('post', 'youtube', [
     //'object_subtype' => '', // Limit to a post type.
     'type'           => 'string',
     'description'    => 'Cidade',
