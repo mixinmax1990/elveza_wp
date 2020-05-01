@@ -27,21 +27,22 @@
 
  // Custom Meta Boxes
 
- function your_prefix_get_meta_box( $meta_boxes ) {
-	$prefix = 'prefix-';
 
-	$meta_boxes[] = array(
-		'id' => 'youtube_ids',
-		'title' => esc_html__( 'Youtube Videos (Seperate Videos by "comma")', 'metabox-online-generator' ),
-		'post_types' => array('post' ),
-		'context' => 'normal',
-		'priority' => 'default',
-		'autosave' => 'true',
-	);
 
-	return $meta_boxes;
-}
-add_filter( 'rwmb_meta_boxes', 'your_prefix_get_meta_box' );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -49,6 +50,7 @@ add_filter( 'rwmb_meta_boxes', 'your_prefix_get_meta_box' );
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
+
 function twentytwenty_theme_support() {
 
 	// Add default posts and comments RSS feed links to head.
