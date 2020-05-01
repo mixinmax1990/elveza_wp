@@ -38,18 +38,23 @@
 		'priority' => 'default',
 		'autosave' => 'false',
 		'fields' => array(
-			array(
-				'id' => $prefix . 'text_1',
-				'type' => 'text',
-				'name' => esc_html__( 'Text', 'metabox-online-generator' ),
-				'clone' => 'true',
-				'add_button' => esc_html__( 'add', 'metabox-online-generator' ),
-			),
-			array(
-				'id' => $prefix . 'textarea_2',
-				'type' => 'textarea',
-				'name' => esc_html__( 'Textarea', 'metabox-online-generator' ),
-				'clone' => 'true',
+			'id' => 'testing',
+			'type' => 'group',
+			'clone' => 'true',
+			'fields' => array(
+				array(
+					'id' => $prefix . 'text_1',
+					'type' => 'text',
+					'name' => esc_html__( 'Text', 'metabox-online-generator' ),
+					'clone' => 'true',
+					'add_button' => esc_html__( 'add', 'metabox-online-generator' ),
+				),
+				array(
+					'id' => $prefix . 'textarea_2',
+					'type' => 'textarea',
+					'name' => esc_html__( 'Textarea', 'metabox-online-generator' ),
+					'clone' => 'true',
+				),
 			),
 		),
 	);
