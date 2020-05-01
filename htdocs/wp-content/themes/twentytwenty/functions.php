@@ -52,6 +52,13 @@
 }
 add_filter( 'rwmb_meta_boxes', 'your_prefix_get_meta_box' );
 
+register_meta('post', 'city', [
+    //'object_subtype' => '', // Limit to a post type.
+    'type'           => 'string',
+    'description'    => 'Cidade',
+    'single'         => true,
+    'show_in_rest'   => true,
+]);
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
