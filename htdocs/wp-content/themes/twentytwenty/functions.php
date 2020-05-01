@@ -27,38 +27,6 @@
 
  // Custom Meta Boxes
 
- add_filter( 'rwmb_meta_boxes', 'meta_box_group_demo_register' );
- function meta_box_group_demo_register( $meta_boxes ) {
-	 $meta_boxes[] = array(
-		 'title' => 'Car Details',
-		 'context' => 'side',
-		 'fields' => array(
-			 array(
-				 'id' => 'car',
-				 'type' => 'group',
- 
-				 'fields' => array(
-					 array(
-						 'name' => 'Brand',
-						 'id' => 'brand',
-						 'type' => 'text',
-					 ),
-					 array(
-						 'name' => 'Date Release',
-						 'id' => 'date',
-						 'type' => 'date',
-					 ),
-					 array(
-						 'name' => 'Color',
-						 'id' => 'color',
-						 'type' => 'color',
-					 ),
-				 ),
-			 ),
-		 ),
-	 );
-	 return $meta_boxes;
- }
 
 
 /**
