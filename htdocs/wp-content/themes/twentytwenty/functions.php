@@ -27,6 +27,36 @@
 
  // Custom Meta Boxes
 
+ function your_prefix_get_meta_box( $meta_boxes ) {
+	$prefix = 'prefix-';
+
+	$meta_boxes[] = array(
+		'id' => 'untitled',
+		'title' => esc_html__( 'Untitled Metabox', 'metabox-online-generator' ),
+		'post_types' => array('post', 'page' ),
+		'context' => 'advanced',
+		'priority' => 'default',
+		'autosave' => 'false',
+		'fields' => array(
+			array(
+				'id' => $prefix . 'text_1',
+				'type' => 'text',
+				'name' => esc_html__( 'Text', 'metabox-online-generator' ),
+				'clone' => 'true',
+				'add_button' => esc_html__( 'add', 'metabox-online-generator' ),
+			),
+			array(
+				'id' => $prefix . 'textarea_2',
+				'type' => 'textarea',
+				'name' => esc_html__( 'Textarea', 'metabox-online-generator' ),
+				'clone' => 'true',
+			),
+		),
+	);
+
+	return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'your_prefix_get_meta_box' );
 
 
 /**
