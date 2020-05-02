@@ -27,7 +27,7 @@
 
  // Custom Meta Boxes
 
- function your_prefix_get_meta_box( $meta_boxes ) {
+ function your_prefix_get_meta_box_video( $meta_boxes ) {
 	$prefix = 'prefix-';
 
 	$meta_boxes[] = array(
@@ -45,20 +45,21 @@
 				'clone' => 'true',
 				'add_button' => esc_html__( 'Add Video', 'metabox-online-generator' ),
 			),
+			array(
+				'id' => $prefix . 'description',
+				'type' => 'textarea',
+				'name' => esc_html__( 'Video Description', 'metabox-online-generator' ),
+				'clone' => 'true',
+				'add_button' => esc_html__( 'Add Video Desc', 'metabox-online-generator' ),
+			),
 		),
 	);
 
 	return $meta_boxes;
 }
-add_filter( 'rwmb_meta_boxes', 'your_prefix_get_meta_box' );
+add_filter( 'rwmb_meta_boxes', 'your_prefix_get_meta_box_video' );
 
-register_meta('post', 'page', [
-    'object_subtype' => 'post', // Limit to a post type.
-    'type'           => 'string',
-    'description'    => 'Cidade',
-    'single'         => true,
-    'show_in_rest'   => true,
-]);
+
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
